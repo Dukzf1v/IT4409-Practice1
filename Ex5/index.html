@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Sách ABC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Cửa hàng Sách ABC</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Giới thiệu cửa hàng -->
+        <section class="intro">
+            <h2>Chào mừng đến với cửa hàng sách ABC</h2>
+            <p>Nơi cung cấp những cuốn sách hay và ý nghĩa cho mọi lứa tuổi</p>
+        </section>
+
+        <!-- Controls -->
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                <button id="searchBtn">Tìm</button>
+            </div>
+            <button id="addProductBtn">Thêm sản phẩm</button>
+        </section>
+
+        <!-- Danh sách sản phẩm -->
+        <section class="products">
+            <h2>Sản phẩm nổi bật</h2>
+            <div id="product-list" class="product-list">
+                <!-- Sản phẩm sẽ được tải từ localStorage -->
+            </div>
+        </section>
+
+        <!-- Form thêm sản phẩm -->
+        <form id="addProductForm" class="hidden">
+            <h3>Thêm sản phẩm mới</h3>
+            
+            <div>
+                <label for="newName">Tên sản phẩm:</label>
+                <input type="text" id="newName" required>
+            </div>
+            
+            <div>
+                <label for="newPrice">Giá:</label>
+                <input type="number" id="newPrice" min="0" step="1000" required>
+            </div>
+            
+            <div>
+                <label for="newDesc">Mô tả:</label>
+                <textarea id="newDesc" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit">Thêm</button>
+                <button type="button" id="cancelBtn">Hủy</button>
+            </div>
+            <p id="errorMsg" style="color:red;"></p>
+        </form>
+
+        <!-- Form liên hệ -->
+        <section class="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="message">Thông điệp:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Gửi liên hệ</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cửa hàng Sách ABC. All rights reserved.</p>
+        <p>Địa chỉ: 123 Đường Sách, Quận 1, TP.HCM</p>
+        <button id="clearStorage" style="margin-top: 10px; background: #e74c3c;">Xóa dữ liệu LocalStorage</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

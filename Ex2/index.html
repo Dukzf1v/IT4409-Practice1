@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DootDeet Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>DootDeet Book Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id ="intro" class="intro">
+            <h2>Welcome to DootDeet Book Store</h2>
+            <p>Read or Leave</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Trending Products</h2>
+            <div id="product-list" class="product-list">
+                <article class="product-item">
+                    <h3 class="product-name">Pride and Prejudice</h3>
+                    <img src="Pride_and_Prejudice.png" alt="Pride and Prejudice Book Cover" width="150">
+                    <p class="product-desc">Austen's most popular novel, the unforgettable story of Elizabeth Bennet and Mr. Darcy</p>
+                    <p class="product-price">Price: 20$</p>
+                </article>
+                
+                <article class="product-item">
+                    <h3 class="product-name">The Great Gatsby</h3>
+                    <img src="The_Great_Gatsby.png" alt="The Great Gatsby Book Cover" width="150">
+                    <p class="product-desc">Nominated as one of America's best-loved novels by PBS's The Great American Read.</p>
+                    <p class="product-price">Price: 35$</p>
+                </article>
+                
+                <article class="product-item">
+                    <h3 class="product-name">The Lord of the Rings</h3>
+                    <img src="The_Lord_Of_Rings.png" alt="The Lord of the Rings Book Cover" width="150">
+                    <p class="product-desc">Immerse yourself in Middle-earth with J.R.R. Tolkien's classic masterpieces behind the films...</p>
+                    <p class="product-price">Price: 43$</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Form -->
+        <section id="contact" class="contact">
+            <h2>Contact us</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DootDeet Book Store. All rights reserved.</p>
+        <p>09/11/2001 Twin Towers</p>
+    </footer>
+</body>
+</html>
